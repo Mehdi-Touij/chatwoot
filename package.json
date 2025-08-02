@@ -1,7 +1,8 @@
 {
-  "name": "@chatwoot/chatwoot",
+  "name": "@enovai/enovai",
   "version": "4.4.0",
   "license": "MIT",
+  "description": "Enovai Customer Support Platform - Professional omnichannel customer support solution",
   "scripts": {
     "eslint": "eslint app/**/*.{js,vue}",
     "eslint:fix": "eslint app/**/*.{js,vue} --fix",
