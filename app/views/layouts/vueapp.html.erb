@@ -6,10 +6,10 @@
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0"/>
     <% if @global_config['DISPLAY_MANIFEST'] %>
-      <meta name="msapplication-TileColor" content="#1f93ff">
+      <meta name="msapplication-TileColor" content="#7C4DFF">
       <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-      <meta name="theme-color" content="#1f93ff">
-      <meta name="description" content="Chatwoot is a customer support solution that helps companies engage customers over Messenger, Twitter, Telegram, WeChat, Whatsapp. Simply connect your channels and converse with your customers from a single place. Easily add new agents to your system and have them own and resolve conversations with customers.Chatwoot also gives you real-time reports to measure your team's performance, canned responses to easily respond to frequently asked questions and private notes for agents to collaborate among themselves.">
+      <meta name="theme-color" content="#7C4DFF">
+      <meta name="description" content="Enovai is a comprehensive customer support platform that helps companies engage customers across multiple channels including Messenger, Twitter, Telegram, WeChat, and WhatsApp. Connect all your communication channels and manage customer conversations from a single unified dashboard. Easily onboard new team members and assign them to handle customer inquiries. Enovai provides real-time analytics to track your team's performance, quick response templates for common questions, and private collaboration tools for your support agents.">
       <% if ENV['IOS_APP_IDENTIFIER'].present? %>
         <meta name="apple-itunes-app" content='app-id=<%= ENV['IOS_APP_IDENTIFIER'] %>'>
       <% end %>
@@ -31,7 +31,7 @@
     <link rel="icon" type="image/png" sizes="512x512" href="<%= @global_config['LOGO_THUMBNAIL'] %>">
     <%= csrf_meta_tags %>
     <script>
-      window.chatwootConfig = {
+      window.enovaiConfig = {
         hostURL: '<%= ENV.fetch('FRONTEND_URL', '') %>',
         helpCenterURL: '<%= ENV.fetch('HELPCENTER_URL', '') %>',
         fbAppId: '<%= @global_config['FB_APP_ID'] %>',
